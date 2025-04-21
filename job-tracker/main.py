@@ -85,14 +85,21 @@ class ThunderbirdAnalyzer(QMainWindow):
                                     date = msg['Date']
                                     parsed_date = parsedate_to_datetime(date)
                                     dates.append(parsed_date)
+                            except email.errors.MessageError as e:
+                                print(f"Error parsing email message: {e}")
+                            except ValueError as e:
+                                print(f"Error converting date: {e}")
                             except Exception as e:
-                                print(f"Error parsing email: {e}")
+                                print(f"Unexpected error parsing email: {e}")
                             raw_email = ""  # Reset for the next email
                     else:
                         raw_email += line
             return dates
-        except Exception as e:
-            self.status_label.setText(f"Error reading text file: {e}")
+        except FileNotFoundError:
+            self.status_label.setText("Error: File not found.")
+            return []
+        except IOError as e:
+            self.status_label.setText(f"Error reading file: {e}")
             return []
 
     def plot_dates(self, dates):
