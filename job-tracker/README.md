@@ -60,8 +60,8 @@ To run this project, you need to have Python installed along with the following 
 This project is licensed under the WTFPL License - see the [LICENSE](LICENSE) file for details.
 
 ## Screenshots
-![Screenshot 1](screenshots/screenshot1.png)
+![Screenshot 1](screenshots/gui.PNG)
 
-![Screenshot 2](screenshots/screenshot2.png)
+![Screenshot 2](screenshots/gui2.PNG)
 
-![Screenshot 3](screenshots/screenshot3.png)
+![Screenshot 3](screenshots/graph-04-11-24.png)
