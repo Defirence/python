@@ -52,5 +52,6 @@ After installing dependencies, simply run the Python script:
 
 ```bash
 python schrodinger_box_simulator.py
+```
 
 Co-written and tested in orchestra with Google Gemini Flash 2.x
