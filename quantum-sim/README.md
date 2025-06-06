@@ -1,4 +1,4 @@
-This is a GPT-generated Python 3.13 codebase in orchestra with Gemini.
+Co-written and tested in orchestra with Google Gemini Flash 2.x
 
 It generates a random seed number, and then calculates, plots and renders 5D->4D->3D->2D vector points of randomness.
 
